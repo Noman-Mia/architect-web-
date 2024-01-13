@@ -5,12 +5,13 @@
 }
 /* header style */
 header {
+  /* width:1200px;
+ height:100%; */
   background: rgba(255, 144, 14, 0.1);
-  padding: 20px 100px;
+  padding: 20px 80px;
 }
 .nav-title {
   color: #131313;
-  text-align: center;
   font-family: Work Sans;
   font-size: 2.6rem;
   font-style: normal;
@@ -37,8 +38,12 @@ nav ul li a {
   text-decoration: none;
 }
 /* banner style */
+.banner {
+  width: 1060px;
+  text-align: center;
+}
 .banner-content {
-  max-width: 700px;
+  max-width: 66.7rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -53,14 +58,92 @@ nav ul li a {
   font-weight: 400;
   line-height: 26px;
 }
-.btn-primary{
-color: #FFF;
-text-align: center;
-font-size:1rem;
-font-weight: 600;
-border-radius: 8px;
-background: #FF900E;
-width: 11.6ren;
-height:3rem;
-border: none;
+.btn-primary {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  background: #ff900e;
+  /* width: 11.6ren;
+height:3rem; */
+  border: none;
+  padding: 1rem 1.3rem;
+  margin-bottom: 2em;
+}
+.banner img {
+  width: 100%;
+}
+/* responsive */
+@media screen and (max-width: 576px) {
+  header {
+    height: 100%;
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .banner {
+    width: 100%;
+  }
+  .nav-title {
+    padding-left: 85px;
+    font-size: 1rem;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-right: 161px;
+    padding-top: 10px;
+  }
+  .banner-title {
+    margin-right: 120px;
+  }
+  .banner-description {
+    margin-right: 120px;
+  }
+  .btn-primary {
+    margin-left: -123px;
+  }
+}
+/* main section */
+main {
+  max-width: 1224px;
+  margin: 60px auto;
+}
+.teams-container {
+  display: flex;
+  align-items: center;
+}
+
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.3rem;
+}
+.teams-content {
+  padding-left: 4.4rem;
+  /* padding-right: 4.4rem; */
+}
+.quick-list {
+  color: #727272;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.of-our {
+  color: #131313;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.Features {
+  color: #ff900e;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.teams-description {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
 }
